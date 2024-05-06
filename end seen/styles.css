@@ -1,0 +1,60 @@
+@font-face {
+    font-family: KhaoNiawThin;
+    src: url(/font/KhaoNiawThin.ttf);
+}
+*{
+    font-family: KhaoNiawThin;
+}
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: black;
+    min-width: 100vw;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 2.5rem;
+    animation: scroll 40s linear infinite;
+    /* backdrop-filter: blur(1px); */
+    animation-name: slideInY;
+}
+p{
+    font-size: 5rem;
+}
+.container{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    height: auto;
+}
+.user1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 140px 0 ;
+}
+.images{
+    width: 150px;
+    height: 150px;
+    border-radius: 10rem;
+    background-color: aquamarine 
+}
+.text{
+    text-align: right;
+}
+.text2{
+    text-align: left;
+}
+@keyframes slideInY {
+    0% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .slide-in-y {
+    animation: slideInY 0.5s ease-in-out;
+  }
+  
